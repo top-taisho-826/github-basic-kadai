@@ -1,12 +1,13 @@
+Last login: Sun Apr 27 12:55:29 on ttys000
+/Users/top.taisho.826/.zshrc:1: no such file or directory: /opt/homebrew/bin/brew
 top.taisho.826@ashibetaishounoMacBook-Pro ~ % cd Desktop/kadai
 top.taisho.826@ashibetaishounoMacBook-Pro kadai % mkdir git_challenge
 top.taisho.826@ashibetaishounoMacBook-Pro kadai % cd git_challenge 
-top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % touch hello_world.xt
+top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % touch hello_world.txt
+top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % echo 'Hello, world!' >>
+zsh: parse error near `\n'
 top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % echo 'Hello, world!' >> hello_world.txt 
-top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % echo 'こんにちは、世界！' >> hello_world.txt 
-top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % echo 'Hello, world!' > hello_world.txt 
 top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % git add hello_world.txt 
-fatal: not a git repository (or any of the parent directories): .git
 top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % git init
 hint: Using 'master' as the name for the initial branch. This default branch name
 hint: is subject to change. To configure the initial branch name to use in all
@@ -20,22 +21,23 @@ hint:
 hint: 	git branch -m <name>
 Initialized empty Git repository in /Users/top.taisho.826/Desktop/kadai/git_challenge/.git/
 top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % git add hello_world.txt 
-top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % git commit -m　'hello_world.txtを追加'
-[master (root-commit) eb9f83d] 　hello_world.txtを追加
+top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % git commit -m'hello_world.txtを追加'
+[master (root-commit) df37a29] hello_world.txtを追加
  1 file changed, 1 insertion(+)
  create mode 100644 hello_world.txt
 top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % echo 'こんにちは、世界！' >> hello_world.txt 
 top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % git add hello_world.txt 
-top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % git commit -m '日本語訳を追記'
-[master 2c45e52] 日本語訳を追記
+top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % git commit -m'日本語訳を追記'
+[master cfc43ed] 日本語訳を追記
  1 file changed, 1 insertion(+)
 top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % cd ../
 top.taisho.826@ashibetaishounoMacBook-Pro kadai % mkdir kadai_005
-top.taisho.826@ashibetaishounoMacBook-Pro kadai % cd kadai_005 
+top.taisho.826@ashibetaishounoMacBook-Pro kadai % cd kadai_005
 top.taisho.826@ashibetaishounoMacBook-Pro kadai_005 % touch kadai_005.txt
-top.taisho.826@ashibetaishounoMacBook-Pro kadai_005 % git log --oneline                       
-fatal: not a git repository (or any of the parent directories): .git
 top.taisho.826@ashibetaishounoMacBook-Pro kadai_005 % cd ../git_challenge 
+top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % git log --online
+fatal: unrecognized argument: --online
 top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % git log --oneline
-2c45e52 (HEAD -> master) 日本語訳を追記
-eb9f83d 　hello_world.txtを追加
+cfc43ed (HEAD -> master) 日本語訳を追記
+df37a29 hello_world.txtを追加
+top.taisho.826@ashibetaishounoMacBook-Pro git_challenge % 
